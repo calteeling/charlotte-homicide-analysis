@@ -64,7 +64,7 @@ def clean_and_save_data_from_api():
 
 
 
-    # ✅ Parse date with known format
+    # Parse date with known format
     df["Incident_Date"] = pd.to_datetime(df["Incident_Date"], unit="ms", errors="coerce")
 
 
