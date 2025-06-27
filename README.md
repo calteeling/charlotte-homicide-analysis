@@ -8,6 +8,19 @@ This project provides interactive tools for exploring and analyzing homicide dat
 
 The data is sourced from the Charlotte Open Data API and includes fallback mechanisms to ensure offline availability.
 
+## Preview
+
+Below are example screenshots from the Charlotte Homicide Analysis Tools web app:
+
+### Heatmap Tab
+![Heatmap](screenshots/heatmap.png)
+
+### Prediction Tool
+![Prediction Tool](screenshots/prediction_tool.png)
+
+### Marker Map
+![Marker Map](screenshots/marker_map.png)
+
 ## Features
 
 - Interactive filtering by year, month, weekday, and weapon type
@@ -23,15 +36,8 @@ The data is sourced from the Charlotte Open Data API and includes fallback mecha
 - Pandas
 - Folium
 - Scikit-learn (for ML model)
-- JSON API from the Charlotte Open Data Portal
-
-## Features
-
-- Interactive heatmap of homicide incidents by year, month, weekday, and weapon
-- Sidebar filtering for customized analysis
-- Predictive tool that estimates weapon type from input features
-- Unit-tested utility functions for robustness
-- Modular structure with Jupyter notebooks, models, and fallback data
+- Jupyter Notebooks (for development)
+- Charlotte Open Data API (JSON)
 
 ## Installation
 
@@ -78,9 +84,11 @@ This will verify the utility functions used for data filtering, prediction, and 
 The data used in this project comes from the [Charlotte Open Data Portal](https://data.charlottenc.gov/)(specifically the https://data.charlottenc.gov/datasets/charlotte::cmpd-homicide/) which provides crime incident information through a public API. To ensure reliability, a backup dataset is included in the project.
 
 ## Insights
-Overall, I'm really happy with how this project turned out. I tried to create an encompasing data analysis project and I believe that it's quite functional. It is worth mentioning that the ML is very basic. This mainly comes from the fact that the dataset I used is heavily weighted towards 'gun' based entries. This causes an extreme reliance on 'gun' predictions for the prediction tool as it rarely returns 'blade' or 'other'. If I had to do this project over again I would probably take more time separating the weapon classes such as hanguns and rifles being in two classes, but I didnt want the app to become too cluttered with options. 
+Overall, I'm really happy with how this project turned out. I tried to create a comprehensive data analysis project, and I believe it's quite functional. It’s worth mentioning that the machine learning component is very basic. This is mainly due to the dataset being heavily weighted toward 'gun'-based entries. As a result, the prediction tool tends to rely heavily on predicting 'gun' and rarely returns 'blade' or 'other'.
 
-I'm also really happy with the functionlity of the data. When I started the project, it was really important for it to have updated data that it uses from the API. In case something goes wrong with the API, there are two fallbacks, one being the most recent json, and two being the archieved json.
+If I were to do this project over again, I would probably take more time to separate the weapon classes — for example, distinguishing between handguns and rifles. However, I chose not to do this to avoid cluttering the app with too many options.
+
+I'm also really happy with how the data functionality turned out. From the beginning, it was important to me that the project could access up-to-date data through the API. In case something goes wrong with the API, the app includes two fallback options: one using the most recent saved JSON file, and another using an archived version of the dataset.
 
 ## License
 
