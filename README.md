@@ -73,50 +73,6 @@ python -m unittest discover -s tests
 ```
 This will verify the utility functions used for data filtering, prediction, and formatting.
 
-## Project Structure
-├── __pycache__/
-│   └── utils.cpython-312.pyc
-├── data/
-│   ├── backup_homicide_data.json
-│   ├── homicide_cleaned.csv
-│   └── homicide_raw.json
-├── models/
-│   ├── final_fandom_forest.pkl
-│   ├── label_mapping.json
-│   ├── model_09v3.pkl
-│   ├── model_09v4.pkl
-│   ├── random_forest_weapon_classifier.pkl
-│   ├── weapon_label_encoder.plk
-│   ├── weapons_encoder.pkl
-│   └── weapons_predictor.pkl
-├── notebooks/
-│   ├── 01_data_fetch.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_heatmap.ipynb
-│   ├── 04_subsets.ipynb
-│   ├── 05_ui.ipynb
-│   ├── 06_ml.ipynb
-│   ├── 07_ml_improved.ipynb
-│   ├── 08_modeling.ipynb
-│   ├── 09_model_refinement_evaluation.ipynb
-│   ├── 09_v2_model_refinement_evaluation.ipynb
-│   ├── 09_v3.ipynb
-│   ├── 09_v4.ipynb
-│   └── 10_app_integreation.ipynb
-├── outputs/
-│   ├── heat_map_knife_2022.html
-│   ├── heatmap_2023.html
-│   ├── heatmap_handgun.html
-│   ├── heatmap_npa12.html
-│   └── homicide_heatmap.html
-├── tests/
-│   ├── __init__.py
-│   └── test_utils.py
-├── .gitignore
-├── README.md
-├── app.py
-└── requirements.txt
-
 ## Data Source
 
 The data used in this project comes from the [Charlotte Open Data Portal](https://data.charlottenc.gov/)(specifically the https://data.charlottenc.gov/datasets/charlotte::cmpd-homicide/) which provides crime incident information through a public API. To ensure reliability, a backup dataset is included in the project.
