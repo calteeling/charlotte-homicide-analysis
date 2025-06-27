@@ -25,12 +25,15 @@ venv.bak/
 # Environment variables
 .env
 
-# Output folders (optional)
+# Output folders
 outputs/
 *.log
 *.tmp
 
-# Data (optional if sensitive or large)
+# Data files
 data/*.csv
 data/*.json
 data/*.xlsx
+
+# Model files
+models/
