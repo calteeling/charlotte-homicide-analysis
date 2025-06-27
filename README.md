@@ -44,8 +44,8 @@ Below are example screenshots from the Charlotte Homicide Analysis Tools web app
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/charlotte-homicide-tools.git
-   cd charlotte-homicide-tools
+   git clone https://github.com/calteeling/charlotte-homicide-analysis.git
+   cd charlotte-homicide-analysis
    ```
 
 2. Create and activate a virtual environment:
@@ -83,12 +83,18 @@ This will verify the utility functions used for data filtering, prediction, and 
 
 The data used in this project comes from the [Charlotte Open Data Portal](https://data.charlottenc.gov/)(specifically the https://data.charlottenc.gov/datasets/charlotte::cmpd-homicide/) which provides crime incident information through a public API. To ensure reliability, a backup dataset is included in the project.
 
+Please use this data responsibly and respectfully—this project is for analytical and educational purposes only.
+
 ## Insights
-Overall, I'm really happy with how this project turned out. I tried to create a comprehensive data analysis project, and I believe it's quite functional. It’s worth mentioning that the machine learning component is very basic. This is mainly due to the dataset being heavily weighted toward 'gun'-based entries. As a result, the prediction tool tends to rely heavily on predicting 'gun' and rarely returns 'blade' or 'other'.
+Overall, I'm really happy with how this project turned out. I set out to build a comprehensive data analysis tool, and I believe it's quite functional. It’s worth noting that the machine learning component is fairly basic. This is mainly due to the dataset being heavily weighted toward 'gun'-related incidents. As a result, the prediction tool often defaults to predicting 'gun' and rarely outputs 'blade' or 'other'.
 
-If I were to do this project over again, I would probably take more time to separate the weapon classes — for example, distinguishing between handguns and rifles. However, I chose not to do this to avoid cluttering the app with too many options.
+If I were to do this project over again, I would likely take more time to separate weapon classes—such as distinguishing between handguns and rifles. However, I decided against this to avoid cluttering the app with too many options.
 
-I'm also really happy with how the data functionality turned out. From the beginning, it was important to me that the project could access up-to-date data through the API. In case something goes wrong with the API, the app includes two fallback options: one using the most recent saved JSON file, and another using an archived version of the dataset.
+I'm also really pleased with the way the data integration works. From the beginning, it was important to me that the app could access up-to-date data from the API. In case something goes wrong with the API, the app includes two fallback options: one using the most recent saved JSON file, and another using an archived version of the dataset.
+
+Finally, it's important to acknowledge that this data is derived from tragic real-world events that occurred throughout Charlotte, NC. Crime is a complex and sensitive subject, and I want to emphasize that I worked with this data with the utmost respect for the victims and their families. The prediction tool is intentionally simple and should be taken with a grain of salt. My goal with this project was to strengthen my data analysis skills and better understand urban crime patterns.
+
+When building predictive models, there's always a risk of reinforcing stereotypes or making unfair generalizations—especially when it comes to neighborhoods or race. That’s why I chose not to include NPA (Neighborhood Planning Area) in the prediction tool. If you plan to work with this data or build upon this project, I encourage you to be mindful of these considerations.
 
 ## License
 
