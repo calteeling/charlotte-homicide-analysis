@@ -38,6 +38,11 @@ Below are example screenshots from the Charlotte Homicide Analysis Tools web app
 - Scikit-learn (for ML model)
 - Jupyter Notebooks (for development)
 - Charlotte Open Data API (JSON)
+- requests
+- json
+- numpy
+- matplotlib
+- joblib
 
 ## Installation
 
