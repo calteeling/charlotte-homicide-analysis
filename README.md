@@ -1,4 +1,6 @@
 # Charlotte Homicide Analysis Tools
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 
 This project provides interactive tools for exploring and analyzing homicide data in Charlotte, NC. It includes a Streamlit app with:
 
