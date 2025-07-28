@@ -44,6 +44,7 @@ Below are example screenshots from the Charlotte Homicide Analysis Tools web app
 - Numpy
 - Matplotlib
 - Joblib
+- Seaborn
 
 ## Installation
 
