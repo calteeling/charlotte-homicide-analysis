@@ -11,7 +11,7 @@ This project provides interactive tools for exploring and analyzing homicide dat
 The data is sourced from the Charlotte Open Data API and includes fallback mechanisms to ensure offline availability.
 
 [View the Live Demo on Streamlit Cloud](https://charlotte-homicide-analysis-2fuyobdrghuufwzitpudrr.streamlit.app/)
-
+Note: The live demo may take ~20 seconds to load if inactive (free-tier hosting). Thank you for your patience!
 ## Preview
 
 Below are example screenshots from the Charlotte Homicide Analysis Tools web app:
